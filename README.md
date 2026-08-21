@@ -15,16 +15,14 @@ First, install HACS using these instructions: https://hacs.xyz/docs/use/download
 
 Then, activate HACS using these instructions: https://hacs.xyz/docs/use/configuration/basic/
 
-Then, on the HACS dashboard under the three dots (top right) you can add this
-repository as a custom repository:
+After this, you can search for Eco-Home, and download and install
+from there.
+
+If you need to add this repository as a custom repository for whichever reason,
+you can do so with the following settings:
 
 - Repository: https://github.com/sgielen/ha-ecohome
 - Type: Integration
-
-Now, click Add. After this, you can search for Eco-Home, and download and install
-from there.
-
-The repository is awaiting review to be searchable directly from within HACS.
 
 ### Installing yourself
 

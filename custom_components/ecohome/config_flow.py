@@ -1,11 +1,15 @@
+import logging
+
 import voluptuous as vol
 from homeassistant.config_entries import ConfigEntry, ConfigFlow, OptionsFlow
 from homeassistant.core import callback
 from homeassistant.helpers import selector
 
-from ecohome import AsyncEcoHomeClient
+from ecohome import AsyncEcoHomeClient, AuthenticationFailedError
 
 from .const import CONF_UPDATE_INTERVAL, DEFAULT_UPDATE_INTERVAL_MINUTES, DOMAIN
+
+_LOGGER = logging.getLogger(__name__)
 
 
 class EcoHomeConfigFlow(ConfigFlow, domain=DOMAIN):
@@ -19,7 +23,10 @@ class EcoHomeConfigFlow(ConfigFlow, domain=DOMAIN):
                     user_input["username"],
                     user_input["password"],
                 )
+            except AuthenticationFailedError:
+                errors["base"] = "invalid_auth"
             except Exception:
+                _LOGGER.exception("Could not reach Eco-Home to log in")
                 errors["base"] = "cannot_connect"
             else:
                 await self.async_set_unique_id(user_input["username"])

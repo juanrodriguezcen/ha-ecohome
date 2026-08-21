@@ -1079,14 +1079,14 @@ wheels = [
 
 [[package]]
 name = "ecohome"
-version = "0.1.3"
+version = "0.1.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8e/f0/a8a273350b773132e6f3d88f36c4cc08ac06894c1deb6c011729824b8e73/ecohome-0.1.3.tar.gz", hash = "sha256:4eef79c8109dedc098d15d0267e098aac9e422d0858d440fe2448f7b1734bb8d", size = 7667, upload-time = "2026-07-20T10:22:19.662Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/b4/71/e6065b1a737984da1fc431faba810758c99a3bbbe10e55120534e0cb6597/ecohome-0.1.6.tar.gz", hash = "sha256:c751864a42f0be927b4df66efae6c6f32c31b60fd95d205f141b86b6956052b1", size = 8359, upload-time = "2026-08-21T22:21:11.783Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/81/74/93d38b378003970ea3239d361812d90d9f1208194a3cd565538c10087eb1/ecohome-0.1.3-py3-none-any.whl", hash = "sha256:11dcdaabc9c0c90bbac5853ac189b4afbe503db29b71ec7b4fefd26b852dc2fb", size = 9538, upload-time = "2026-07-20T10:22:18.637Z" },
+    { url = "https://files.pythonhosted.org/packages/56/fc/860f3647666aeaddd7cbbc06489d1f5d6db553f44b957ef34419631e70e0/ecohome-0.1.6-py3-none-any.whl", hash = "sha256:ac3d716092480793ee9ffa8cbd671057e442f749bc53ff83df3c52aad91e6ae8", size = 10253, upload-time = "2026-08-21T22:21:10.878Z" },
 ]
 
 [[package]]
@@ -1317,7 +1317,7 @@ wheels = [
 
 [[package]]
 name = "ha-ecohome"
-version = "0.1.4"
+version = "0.1.6"
 source = { virtual = "." }
 
 [package.dev-dependencies]
@@ -1331,7 +1331,7 @@ dev = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "ecohome", specifier = ">=0.1.3" },
+    { name = "ecohome", specifier = ">=0.1.6" },
     { name = "pytest-homeassistant-custom-component" },
 ]
 

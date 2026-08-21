@@ -10,7 +10,8 @@
       }
     },
     "error": {
-      "cannot_connect": "Could not connect. Check your credentials and try again."
+      "cannot_connect": "Could not reach Eco-Home. Check your internet connection and try again.",
+      "invalid_auth": "Invalid username or password."
     },
     "abort": {
       "already_configured": "This account is already configured."
